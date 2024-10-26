@@ -37,10 +37,13 @@ const tweetsArray = [
   },
 ];
 
-function App() {
+function App(props) {
   return (
     <div className="App">
-      <Tweet />
+      <Tweet oneTweet={ tweetsArray[0]} />
+      <Tweet oneTweet={ tweetsArray[1]} />
+      <Tweet oneTweet={ tweetsArray[2]} />
+
     </div>
   );
 }
